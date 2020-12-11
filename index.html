@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Title -->
+    <title>Wynik | Audyt profilu LinkedIn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- FACEBOOK SHARE  -->
+    <meta property="og:url" content="https://btake.me/ap/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://tnachtman.github.io/AudytLinkedIn/assets/images/10.png">
+    <meta property="og:title" content="Mój wynik audytu profilu LinkedIn">
+    <meta property="og:description" content="Audyt profilu LinkedIn pomaga dostosować profil tak, by mógł prezentować się w sieci jeszcze lepiej.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+
+    <!-- CSS Global Icons -->
+    <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
+
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="assets/css/unify-core.css">
+    <link rel="stylesheet" href="assets/css/unify-components.css">
+    <link rel="stylesheet" href="assets/css/unify-globals.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="g-bg-gray-dark-v1 g-color-white">
+    
+    <div class="buttons">
+        <a id="a-make" class="btn btn-success" href="#">Make a screenshot</a>
+        <a id="a-make" class="btn btn-danger" href="#">STOP ACTION</a>
+        <a style="visibility: hidden;" id="a-download" href="#">Download a screenshot</a>
+    </div>
+    
+
+    <div id="main">
+        <div id="screenshot" class="background">
+            <div class="overlay">
+                <img src="https://images.typeform.com/images/dfRD8mmD2E6M/background/large" alt="tt">
+            </div>
+            <div class="background">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 pt-5 align-center">
+                            <h4 class="h4">Oto twój wynik</h4>
+                        </div>
+                        <!-- Counter Pie Chart -->
+                        <div class="col-md-6 col-sm-12 g-mb-50 pt-3 pb-3 align-center">
+                            <div id="diagram" class="js-pie g-mb-30" data-circles-value="0" data-circles-max-value="100" data-circles-bg-color="#222" data-circles-fg-color="#72c02c" data-circles-radius="80" data-circles-stroke-width="8" data-circles-font-size="30" data-circles-additional-text="%" data-circles-duration="1200" data-circles-scroll-animate="true"></div>
+                            <h4 id="punktacja" class="g-mb-15"></h4>
+                            <p id="opis" class="lead g-px-10 mb-0">Nestety nie udało się pobrać wyniku</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="social_buttons" class="col-sm-12 row">
+            <div class="col-12 align-center pt-5 pb-3">
+                <h4 class="h4">Udostępnij swój wynik</h4>
+            </div>
+            <div class="col-12 align-center">
+                <a href="#" class="btn btn-xl u-btn-3d u-btn-blue g-mr-10 g-mb-15">
+                    <i class="fa fa-linkedin pull-left g-font-size-42 g-mr-10"></i>
+                    <span class="float-right text-left">
+                        <span class="d-block g-font-size-11">Udostępnij na</span>
+                        LinkedIn
+                    </span>
+                </a>
+                <a href="#" class="btn btn-xl u-btn-3d u-btn-indigo g-mr-10 g-mb-15">
+                    <i class="fa fa-facebook pull-left g-font-size-42 g-ml-10"></i>
+                    <span class="float-right text-left">
+                        <span class="d-block g-font-size-11">Udostępnij na</span>
+                        Facebooku
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+       
+
+    
+
+    <!-- JS Global Compulsory -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Custom -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- JS Circles -->
+    <script src="assets/vendor/circles/circles.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/appear.js"></script>
+
+    <!-- JS Unify -->
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/components/hs.chart-pie.js"></script>
+
+    <!-- JS Plugin Init -->
+    <script>
+        $(document).ready(() => {
+            //init chart pies
+            let items = $.HSCore.components.HSChartPie.init('.js-pie');
+        });
+    </script>
+
+    <!-- HTML 2 CANVAS Plugin -->
+    <script src="assets/js/html2canvas.min.js"></script>
+
+</body>
+</html>
