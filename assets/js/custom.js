@@ -9,6 +9,7 @@ if(score === null){
     console.log(url);
     // window.open(window.location.href.concat(`?&score=0`), '_self');
     console.log(window.location.href.concat(`?&score=0`));
+    setTimeout(() => {window.open(window.location.href.concat(`?&score=0`), '_self');},1000);
 }
 
 const get_score_text = (score) => {
