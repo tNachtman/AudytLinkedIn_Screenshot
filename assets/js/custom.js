@@ -7,7 +7,7 @@ let stopAction = false;
 if(score === null){
     console.log(score);
     console.log(url);
-    window.open(window.location.href.replace(`/`, `/index.html?&score=0`), '_self');
+    window.open(window.location.href.concat(`?&score=0`), '_self');
 }
 
 const get_score_text = (score) => {
