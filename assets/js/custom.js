@@ -5,6 +5,8 @@ const score = url.searchParams.get("score");
 let stopAction = false;
 
 if(score === null){
+    console.log(score);
+    console.log(url);
     window.open(window.location.href.replace(`.html`, `.html?&score=0`), '_self');
 }
 
@@ -56,13 +58,15 @@ $('#diagram').attr('data-circles-value', score);
 $('#punktacja').text(score + " / 100 pkt.");
 $('#opis').text(get_score_text(score));
 $('#a-make').on('click', makeScreenshot);
-$('#a-stop').on('click', () => {stopAction = true;});
+$('#a-stop').on('click', () => {
+    stopAction = true;
+});
 document.getElementById("a-download").addEventListener('click', function(){
     this.href = document.getElementById("canvasID").toDataURL();
     this.download = `graph_${score}.png`;
 });
 
-// Jeśli ma pobierać automatycznie odkomentuj tą sekcję. Na razie w ten sposób działa
+// Jeśli ma pobierać automatycznie odkomentuj tą sekcję. Na razie w ten sposób działa (uwaga: na razie lubi zjeść RAM)
 // if(score <= 100 && !stopAction){
 //     autoScreen(1500);
 // }
