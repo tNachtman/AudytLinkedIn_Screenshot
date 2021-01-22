@@ -69,6 +69,6 @@ document.getElementById("a-download").addEventListener('click', function(){
 });
 
 // Jeśli ma pobierać automatycznie odkomentuj tą sekcję. Na razie w ten sposób działa (uwaga: na razie lubi zjeść RAM)
-// if(score <= 100 && !stopAction){
-//     autoScreen(1500);
-// }
+if(score <= 100 && !stopAction){
+    autoScreen(1500);
+}
